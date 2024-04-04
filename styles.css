@@ -1,0 +1,119 @@
+/* Общие стили */
+body {
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .container {
+        max-width: 1140px;
+        margin: 0 auto;
+        height: 100%;
+    }
+    
+    /* Стили для первого экрана */
+    .first-screen {
+        height: 100vh;
+        clip-path: ellipse(100% 60% at 50% 35%);
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    
+    .first-screen h1 {
+        font-family: "Lora", serif;
+        font-size: 80px;
+        color: white;
+    }
+    
+    /* Стили для кнопок */
+    .btn {
+        padding: 13px 20px;
+        border: 2px solid transparent;
+        color: white;
+        font-weight: 700;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .btn:hover {
+        background-color: #e63a23;
+    }
+    
+    .btn-outline {
+        background-color: transparent;
+    }
+    
+    /* Стили для галереи */
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .img-wrapper {
+        width: 350px;
+        height: 290px;
+        margin-top: 50px;
+        overflow: hidden;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .img-wrapper:hover {
+        transform: scale(1.05);
+    }
+    
+    /* Стили для формы обратной связи */
+section.section-bg {
+    background: url("img/alnilam_Stars_Pattern.svg");
+    padding-top: 1px; 
+    padding-bottom: 10px;
+}
+
+.tx {
+    color: white;
+}
+
+    .fr{
+        float: right;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+        padding: 15px;
+        font-size: 15px;
+        margin-bottom: 15px;
+        border: none;
+    }
+    
+    form input[type="submit"] {
+        padding: 13px 20px;
+        border: none;
+        color: white;
+        font-weight: 700;
+        text-decoration: none;
+        background-color: #c74838;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    form input[type="submit"]:hover {
+        background-color: #e63a23;
+    }
+    
+    /* Стили для футера */
+    footer {
+        padding: 50px 0;
+        text-align: center;
+    }
+    
+    
