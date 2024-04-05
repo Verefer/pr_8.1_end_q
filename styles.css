@@ -1,121 +1,127 @@
-/* Общие стили */
+﻿/* Общие стили */
 body {
-        font-family: "Montserrat", sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    .container {
-        max-width: 1140px;
-        margin: 0 auto;
-        height: 100%;
-    }
-    
-    /* Стили для первого экрана */
-    .first-screen {
-        height: 100vh;
-        clip-path: ellipse(100% 60% at 50% 35%);
-        display: flex;
-        align-items: center;
-        position: relative;
-    }
-    
-    .first-screen h1 {
-        font-family: "Lora", serif;
-        font-size: 80px;
-        color: white;
-    }
-    
-    /* Стили для кнопок */
-    .btn {
-        padding: 13px 20px;
-        border: 2px solid transparent;
-        color: white;
-        font-weight: 700;
-        text-decoration: none;
-        transition: all 0.3s ease-in-out;
-        background-color: rgba(0, 0, 0, 0);
-    }
-    
-    .btn:hover {
-        background-color: #e63a23;
-    }
-    
-    .btn-outline {
-        background-color: transparent;
-    }
-    
-    /* Стили для галереи */
-    .gallery {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    
-    .img-wrapper {
-        width: 350px;
-        height: 290px;
-        margin-top: 50px;
-        overflow: hidden;
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        transition: all 0.3s ease-in-out;
-    }
-    
-    .img-wrapper:hover {
-        transform: scale(1.05);
-    }
-    
-    /* Стили для формы обратной связи */
-section.section-bg {
-    background: url("img/alnilam_Stars_Pattern.svg");
-    padding-top: 1px; 
-    padding-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-    
-    form {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    form input[type="text"],
-    form input[type="email"],
-    form textarea {
-        padding: 15px;
-        font-size: 15px;
-        margin-bottom: 15px;
-        border: none;
-    }
-    
-    form input[type="submit"] {
-        padding: 13px 20px;
-        border: none;
-        color: white;
-        font-weight: 700;
-        text-decoration: none;
-        background-color: #c74838;
-        transition: all 0.3s ease-in-out;
-    }
-    
-    form input[type="submit"]:hover {
-        background-color: #e63a23;
-    }
-    
-    /* Стили для футера */
-    footer {
-        padding: 50px 0;
-        text-align: center;
-    }
-    
-    /* Стили для формы обратной связи */
-section.section-bg {
-    background: url("img/alnilam_Stars_Pattern.svg");
-    padding: 50px 0; /* Внутренний отступ сверху и снизу */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    height: 100%;
 }
 
+/* Стили для первого экрана */
+.first-screen {
+    height: 100vh;
+    clip-path: ellipse(100% 60% at 50% 35%);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.first-screen h1 {
+    font-family: "Lora", serif;
+    font-size: 80px;
+    color: white;
+}
+
+/* Стили для кнопок */
+.btn {
+    padding: 13px 20px;
+    border: 2px solid transparent;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.btn:hover {
+    background-color: #e63a23;
+}
+
+.btn-outline {
+    background-color: transparent;
+}
+
+/* Стили для галереи */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.img-wrapper {
+    width: 350px;
+    height: 290px;
+    margin-top: 50px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    border: 1px black;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.img-wrapper img{
+    position: relative;
+    max-height: 100%;
+    max-width: auto;
+}
+
+.img-wrapper:hover {
+    transform: scale(1.05);
+}
+
+section.section-bg {
+    background: url("img/alnilam_Stars_Pattern.svg");
+    padding: 50px 0;
+}
+
+/* Стили для формы обратной связи */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    padding: 15px;
+    font-size: 15px;
+    margin-bottom: 15px;
+    border: none;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    outline: none;
+}
+
+form input[type="submit"] {
+    padding: 13px 20px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: #c74838;
+    transition: all 0.3s ease-in-out;
+}
+
+form input[type="submit"]:hover {
+    background-color: #e63a23;
+}
+
+/* Стили для футера */
+footer {
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Дополнительные стили */
 .d-flex {
     display: flex;
 }
@@ -130,48 +136,15 @@ section.section-bg {
 }
 
 .pr-4 {
-    padding-right: 4rem; /* Внутренний отступ справа */
+    padding-right: 4rem;
 }
 
-/* Стили для текста и формы */
 .w-60 h2 {
-    margin-bottom: 10px; /* Отступ снизу для заголовка */
+    margin-bottom: 10px;
 }
 
 .w-60 p {
-    margin-bottom: 20px; /* Отступ снизу для абзаца */
-   
-}
-
-.w-40 form {
-    display: flex;
-    flex-direction: column; /* Вертикальное расположение элементов */
-}
-
-.w-40 input[type="text"],
-.w-40 input[type="email"],
-.w-40 textarea {
-    padding: 15px; /* Внутренний отступ */
-    font-size: 15px; /* Размер шрифта */
-    margin-bottom: 15px; /* Отступ снизу */
-    border: none; /* Убираем границу */
-}
-
-.w-40 input[type="text"]:focus,
-.w-40 input[type="email"]:focus,
-.w-40 textarea:focus {
-    outline: none; /* Убираем светящуюся границу при фокусе */
-}
-
-/* Стили для подвала */
-footer {
-    padding: 50px 0; /* Внутренний отступ сверху и снизу */
-    text-align: center; /* Выравнивание текста по центру */
-}
-
-/* Эффект наведения на кнопки */
-.btn:hover {
-    background-color: #e63a23; /* Цвет фона при наведении */
+    margin-bottom: 20px;
 }
 
 .chevron {
@@ -182,10 +155,9 @@ footer {
     transform: translate(-50%, 0);
 }
 
-
 .chevron img {
-    width: 50px; 
-    height: auto; 
+    width: 50px;
+    height: auto;
 }
 
 html {
