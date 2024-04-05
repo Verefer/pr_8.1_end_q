@@ -181,3 +181,13 @@ footer {
     bottom: 150px;
     transform: translate(-50%, 0);
 }
+
+
+.chevron img {
+    width: 50px; 
+    height: auto; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
