@@ -30,7 +30,7 @@ body {
 /* Стили для кнопок */
 .btn {
     padding: 13px 20px;
-    border: 2px solid transparent;
+    border: 1px solid white;
     color: white;
     font-weight: 700;
     text-decoration: none;
